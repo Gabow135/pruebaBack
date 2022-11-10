@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "d5f7cc0d-5c15-42c0-8bd6-61a19c790ba9",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12290739"
+	},
+	"item": [
+		{
+			"name": "Nuevo Cliente JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mail\":\"maritza@gmail.com\",\r\n    \"nombre\":\"Maritza Reyes\",\r\n    \"telefono\":\"0923466833\",\r\n    \"beneficio\":\"Descuento1\",\r\n    \"lista\":\"JSON\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/nuevoJSON",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"nuevoJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo Cliente XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Cliente><mail>maritza@gmail.com</mail><nombre>Maritza Reyes</nombre><telefono>0923466833</telefono></Cliente>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/nuevoXML",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"nuevoXML"
+					]
+				},
+				"description": "Cliente con XML"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clientes/consulta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"consulta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Beneficios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/beneficios/consulta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficios",
+						"consulta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON Beneficio JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"sk_formato\":[\r\n      {\r\n         \"beneficio\":\"Descuento1\"\r\n      },\r\n      {\r\n         \"beneficio\":\"Descuento2\"\r\n      },\r\n      {\r\n         \"beneficio\":\"Descuento3\"\r\n      },\r\n      {\r\n         \"beneficio\":\"Descuento4\"\r\n      },\r\n      {\r\n         \"beneficio\":\"Descuento5\"\r\n      },\r\n      {\r\n         \"beneficio\":\"Descuento6\"\r\n      },\r\n      {\r\n         \"beneficio\":\"Descuento7\"\r\n      }\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/beneficios/nuevoJSON",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficios",
+						"nuevoJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON Beneficio XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<th_formato>\r\n\t<beneficios>\r\n\t\t\t<beneficio>Descuento1</beneficio>\r\n\t\t\t<beneficio>Descuento2</beneficio>\r\n\t\t\t<beneficio>Descuento3</beneficio>\r\n\t\t\t<beneficio>Descuento4</beneficio>\t\t\t\r\n\t\t\t<beneficio>Descuento5</beneficio>\t\t\t\r\n\t\t\t<beneficio>Descuento6</beneficio>\t\t\t\r\n\t</beneficios>\r\n</th_formato>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/beneficios/nuevoXML",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficios",
+						"nuevoXML"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

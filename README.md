@@ -136,4 +136,28 @@ Queremos una persona a la que le guste lo que hace, trabaje en equipo y quiera i
 
 Si te has identificado, ¡forma parte de nuestro equipo! 
 
- 
+
+## Prueba Validar 
+
+Los Links para los accesos:
+http://localhost:8080  ==> Link Servicio
+http://localhost:8080/h2-console/ ==> Link Base de Datos
+http://localhost:8080/swagger-ui.html#/cliente-controller ==> swagger
+
+Revisar JSON de postman para realizar las pruebas.
+
+## Ciclo de Pruebas
+
+1. IDE spring boot, correr dentro de spring boot y maven instalara todas las dependencias.
+2. Abrir los servicios de postman o swagger el orden es el siguiente.
+  2.1 Insertar los beneficios con JSON o XML
+  2.2 Consultar los beneficios no ocupados
+  2.3 Insertar los clientes con JSON o XML
+  2.4 Consultar los clientes
+3. Se agrego controles para poder realizar pruebas con los postman.
+
+## Datos Personales
+
+Gabriel Reyes
+jgabrielreyesv@gmail.com
+0995466833
