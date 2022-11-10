@@ -150,10 +150,10 @@ Revisar JSON de postman para realizar las pruebas.
 
 1. IDE spring boot, correr dentro de spring boot y maven instalara todas las dependencias.
 2. Abrir los servicios de postman o swagger el orden es el siguiente.
-  2.1 Insertar los beneficios con JSON o XML
-  2.2 Consultar los beneficios no ocupados
-  2.3 Insertar los clientes con JSON o XML
-  2.4 Consultar los clientes
+* Insertar los beneficios con JSON o XML
+* Consultar los beneficios no ocupados
+* Insertar los clientes con JSON o XML
+* Consultar los clientes
 3. Se agrego controles para poder realizar pruebas con los postman.
 
 ## Datos Personales
